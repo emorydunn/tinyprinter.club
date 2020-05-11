@@ -105,7 +105,7 @@ Create a `config.py` based on `config.example.py`. If you don't have the MAC add
 
 Run `printer.py` to print a self-test. If you did everything well, you should have a bunch of infos printed on your Paperang! You can also edit this file to print any arbitrary image, processed with the famous [Atkinson dithering algorithm](https://en.wikipedia.org/wiki/Dither#Algorithms).
 
-Next, let's get `sirius-client` working. Install ts-node globally (`npm install -g ts-node`), then do a `yarn install`. Put your printer file into the `fixtures` folder, then edit `bin/client.ts` and point `printerDataPath` to it. Edit `src/device/printer/filesystem-printer.ts` and update it with the temp directory we use for communication that you created two paragraphs before.
+Next, let's get `sirius-client` working. Install ts-node globally (`npm install -g ts-node`), then do a `yarn install`. Put your printer file into the `fixtures` folder, then edit `bin/client.ts` and point `printerDataPath` to it. 
 
 Now run both projects (`python3 littlepriter.py` and `ts-node bin/client.ts`), and you're ready to print something!
 
